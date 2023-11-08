@@ -1,3 +1,5 @@
+<?php
+
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -7,8 +9,8 @@ class Order extends Model
 {
     use HasFactory;
 
-    public function orderLines()
+    public function ordersLines()
     {
-        return $this->hasMany(OrderLine::class);
+        return $this->hasMany(OrdersLines::class);
     }
 }
